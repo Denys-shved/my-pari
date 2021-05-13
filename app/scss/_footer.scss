@@ -1,0 +1,33 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 78px;
+    background: linear-gradient(180deg, $gradientStart 0%, $gradientBlack 100%);
+    &__payment{
+        margin-left: 40px;
+        flex-grow: 2;
+    }
+    &__payment-item:not(:last-child){
+        margin-right: 15px;
+    }
+    &__app{
+        flex-grow: 2;
+    }
+    &__app-item:not(:last-child){
+        margin-right: 10px;
+    }
+    &__trust{
+        flex-grow: 1;
+    }
+    &__social{
+        margin-right: 60px;
+    }
+    &__social-item:not(:last-child){
+        margin-right: 20px;
+    }
+}

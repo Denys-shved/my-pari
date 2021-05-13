@@ -1,0 +1,54 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: linear-gradient(180deg, $black 13.02%, $gradientStart 100%);
+    &--padding{
+        padding-top: 27px;
+    }
+    &__logo{
+        display: block;
+        min-width: 144px;
+        min-height: 44px;
+        margin-left: 60px;
+        background: url(../images/dest/logo_pm.svg) center no-repeat;
+        background-size: cover;
+    }
+    &__info{
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 32px;
+        text-align: center;
+        min-width: 900px;
+        white-space: nowrap;
+        &--yellow{
+            color: $accent;
+        }
+    }
+    &__sign{
+        text-decoration: none; 
+        text-align: center;
+        color: $accent;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 24px;       
+        display: block;
+        width: 147px;
+        height: 38px;
+        border: 1.5px solid $accent;
+        text-transform: uppercase;
+        transform: skewX(-12deg);
+        margin-right: 40px;
+        margin-left: 10px;
+        &:hover{
+            text-decoration: none;
+            color: $accent;
+            background: $hoverBg;
+            transition: .3s;
+        }
+    }
+    &__sign-word{
+        transform: skewX(12deg);        
+        line-height: 37px;
+    }
+}

@@ -1,0 +1,88 @@
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: $gradientBlack;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .8s all;
+    z-index: 6;
+    &__body{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.52vw;
+    }
+    &__content{
+        background: $black;
+        padding: 2.08vw 5.2vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 0px 25px $accent;
+        overflow: hidden;
+        position: relative;
+    }
+    &__close{
+        position: absolute;
+        top: .55vw;
+        right: 1.25vw;
+        
+    }
+    &__title{
+        font-size: calc(16px + (44 - 16)*(100vw - 320px)/(1920 - 320));
+        line-height: 3.75vw;
+        text-transform: uppercase;    
+    }
+    &__quantity{
+        font-weight: bold;
+        font-size: calc(44px + (120 - 44)*(100vw - 320px)/(1920 - 320));
+        line-height: 6.25vw;
+        color: $accent;
+    }
+    &__spins{
+        font-size: calc(12px + (24 - 12)*(100vw - 320px)/(1920 - 320));
+        line-height: 6.25vw;
+    }
+    &__btn{
+        text-decoration: none; 
+        text-align: center;
+        color: $black;
+        font-weight: bold;
+        font-size: calc(14px + (30 - 14)*(100vw - 320px)/(1920 - 320));
+        line-height: 3.49vw;       
+        display: block;
+        background: $accent;
+        width: 18.8vw;
+        height: 3.49vw;
+        text-transform: uppercase;
+        transform: skewX(-12deg);
+        z-index: 2;
+        transition: .5s;        
+        &:hover{
+            text-decoration: none;
+            color: $accent;
+            background: $hoverBg;
+            transition: .7s;
+        }
+    }
+    &__btn-name{
+        transform: skewX(12deg);  
+        font-size: calc(14px + (30 - 14)*(100vw - 320px)/(1920 - 320));;      
+        line-height: 1.927vw;
+    }
+    &__smoke{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 30%;
+        width: 100%;
+    }
+    &.open{
+        opacity: 1;
+        visibility: visible;
+    }
+}
