@@ -1,0 +1,23 @@
+@import 'config';
+@import 'header';
+@import 'content';
+@import 'footer';
+@import 'popup';
+@import 'media';
+
+// CUSTOM USER STYLES & IMPORTS
+.container{
+    min-height: 100vh;
+    background: url(../images/dest/background_img.jpg) center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+
+
+
+
